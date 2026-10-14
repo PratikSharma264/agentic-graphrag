@@ -1,0 +1,18 @@
+completion_models:
+  default_completion_model:
+    model_provider: gemini
+    model: gemini-3.5-flash-lite
+    auth_method: api_key
+    api_key: ${GEMINI_API_KEY}
+
+embedding_models:
+  default_embedding_model:
+    model_provider: gemini
+    model: gemini-embedding-001
+    auth_method: api_key
+    api_key: ${GEMINI_API_KEY}
+
+chunking:
+  type: tokens
+  size: 100
+  overlap: 20
